@@ -66,3 +66,25 @@ nav > ul > li > a {
 nav li a:hover{
     background-color:rgb(9, 97, 148);  
 }
+
+footer{
+    background-color: rgb(11, 74, 156);
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    padding-left: 30px;	
+}
+
+
+
+footer p{
+    text-align: start;
+}
+
+#container {
+    display: table;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
