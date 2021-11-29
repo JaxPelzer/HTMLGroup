@@ -1,11 +1,5 @@
 @charset "utf-8";
 
 /* HTML background settings */
-#container {
-    display: table;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
+
 /* Body styles */
