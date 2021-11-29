@@ -12,7 +12,9 @@ h1, h2, h3, h4, h5, h6, header, html, img, li, main, nav, ol, p, section, span, 
 }
 
 html {
-    background: url(images.png);
+    background: url(imagepoke.jpeg);
+    background-size: 100%;
+
 }
 
 body {
@@ -22,7 +24,7 @@ body {
     margin: auto;
     min-width: 540px;
     max-width: 3840px;   
-    width: 95%;
+    width: 80%;
  }
 
  header {
@@ -50,7 +52,7 @@ nav > ul {
 nav > ul > li {
 	display: table-cell;
 	text-align: center;
-    background-color: rgbrgb(11, 74, 156);
+    background-color: rgb(11, 74, 156);
     font-size: 2em;
 }
 
