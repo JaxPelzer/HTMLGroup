@@ -63,7 +63,7 @@ nav > ul > li > a {
     padding: 15px;
 }
 
-nav li a:hover{
+nav li a:hover, nav li a:active{
     background-color:rgb(9, 97, 148);  
 }
 
