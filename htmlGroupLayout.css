@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6, header, html, img, li, main, nav, ol, p, section, span, 
    margin: 0px;
    padding: 0px;
    font-size:100%;
+   vertical-align: baseline;
    -webkit-box-sizing: border-box; 
    -moz-box-sizing: border-box; 
    box-sizing: border-box;	 
@@ -22,11 +23,10 @@ body {
     box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
     height: 100%;   
     margin: auto;
-    min-width: 540px;
+    min-width: 340px;
     max-width: 3840px;   
     width: 80%;
  }
-
  header {
     background-color: rgb(11, 74, 156);
     color: white;
@@ -45,9 +45,7 @@ nav {
 	width: 100%;
 }
 
-nav > ul {
-	display: table-row;
-}
+
 
 nav > ul > li {
 	display: table-cell;
@@ -66,6 +64,7 @@ nav > ul > li > a {
 nav li a:hover, nav li a:active{
     background-color:rgb(9, 97, 148);  
 }
+
 
 footer{
     background-color: rgb(11, 74, 156);
@@ -88,3 +87,13 @@ footer p{
     margin-top: 20px;
     margin-bottom: 50px;
 }
+form {
+    position: relative;
+    background-color: white;
+    -moz-box-shadow: rgb(101, 101, 101) -20px 0px 20px,
+                rgb(101, 101, 101) 20px 0px 20px;
+    -webkit-box-shadow: rgb(101, 101, 101) -20px 0px 20px,
+                rgb(101, 101, 101) 20px 0px 20px;
+    box-shadow: rgb(101, 101, 101) -20px 0px 20px,
+                rgb(101, 101, 101) 20px 0px 20px;
+ }

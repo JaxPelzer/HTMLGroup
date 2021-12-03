@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+
+address, article, aside, blockquote, body, cite, div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, li, main, nav, ol, p, section, span, ul {  
+   margin: 0px;
+   padding: 0px;
+   font-size:100%;
+   -webkit-box-sizing: border-box; 
+   -moz-box-sizing: border-box; 
+   box-sizing: border-box;	 
+}
+html {
+    background: url(imagepoke.jpeg);
+    background-size: 100%;
+}
+body {
+    background-color: rgba(214, 225, 147, 0.618);
+    box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
+    min-height: 100%;   
+    margin-left: auto;
+	margin-right: auto;
+    min-width: 340px;
+    max-width: 3840px;   
+    width: 81.9%;
+    clear: none;
+	float: none;
+    
+ }
+ header {
+    background-color: rgb(11, 74, 156);
+    color: white;
+ }
+ body > header img{
+    width: 100%;
+}
+
+
+nav a img {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 3px;
+}
+
+.home {
+    position: absolute;
+    top: 420px;
+    left: 25%;
+    font-size: 2em;
+    color: black;
+    background-color: white;
+}
+.quiz {
+    position: absolute;
+    top: 420px;
+    right: 25%;
+    font-size: 2em;
+    color: black;
+    background-color: white;
+}
+.cart {
+    position: absolute;
+    top: 670px;
+    right: 25%;
+    font-size: 2em;
+    color: black;
+    background-color: white;
+}
+.store {
+    position: absolute;
+    top: 670px;
+    left: 25%;
+    font-size: 2em;
+    color: black;
+    background-color: white;
+}
+
+footer{
+    display: block;
+    background-color: rgb(11, 74, 156);
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    padding-left: 30px;	
+}
+footer p{
+    text-align: start;
+}
+
+
+/* small screens */
+@media all  and (max-width: 480px){
+    nav a img {
+        display: inline-block;
+        width: 100%;
+        padding: 3px;
+    }
+}
+/* medium screens */
+@media all  and (min-width: 481px) and (max-width: 768px) {
+    nav a img {
+        display: inline-block;
+        width: 100%;
+        padding: 3px;
+    }
+    
+}
