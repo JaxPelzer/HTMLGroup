@@ -1,1 +1,36 @@
 @charset "utf-8";
+
+#container {
+    margin: 50px 50px 50px 5%;
+    width: 90%;
+    text-align: center;
+}
+
+.items {
+    width: 25%;
+    margin: 25px;
+    border: none;
+    display: inline-block;
+}
+
+.itemsPrice {
+    font-size: large;
+}
+
+.items > button {
+    margin-bottom: 10px;
+    width: 150px;
+    background-color: green;
+    border-radius: 20px 20px;
+}
+.items:hover {
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0px 30px rgb(164, 236, 164);
+    width: 30%;
+}
+
+.itemsImage {
+    height: 275px;
+    width: 200px;
+}
