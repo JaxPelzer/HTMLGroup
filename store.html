@@ -6,50 +6,53 @@
     <title>Pokemon Fans | Store</title>
     <link href="htmlGroupLayout.css" rel="stylesheet" />
     <link href="storeLayout.css" rel="stylesheet" />
-    
+
 
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html"><img src="Logo Pokemon.png" alt="Pokemon Logo" width="320" height="213" />
+        <a href="index.html"><img src="Logo Pokemon.png" alt="Pokemon Logo" width="420" height="313" />
+            <nav>
+
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="quiz.html">Whos that Pokemon?</a></li>
-                    <li> &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
                     <li><a href="store.html">Store</a></li>
-                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
-        </nav>
-       
-    </header> 
+            </nav>
+
+    </header>
     <div id="container">
-        <div class="items">
-            <a href="cart.html"><img src="Pika.jpg" class="itemsImage"/></a>
-            <div class="description">Pikachu Plushy</div>
-            <div class="itemsPrice">$19.99</div>
-            <br/>
-            <button class="button">Buy Now</button>
-        </div>
-        <div class="items">
-            <a href="cart.html"><img src="Squirtle.jpeg" class="itemsImage"/></a>
-            <div class="description">Squirtle Plushy</div>
-            <div class="itemsPrice">$19.99</div>
-            <br/>
-            <button class="button">Buy Now</button>
-        </div>
-        <div class="items">
-            <a href="cart.html"><img src="Charmander.jpeg" class="itemsImage"/></a>
-            <div class="description">Charmander Plushy</div>
-            <div class="itemsPrice">$19.99</div>
-            <br/>
-            <button class="button">Buy Now</button>
-        </div>
+        <form id="cart" name="cart" method="get" action="cart.html">
+            <div class="items">
+                <img src="Pika.jpg" class="itemsImage" />
+                <div class="description">Pikachu Plushy</div>
+                <div class="itemsPrice">$19.99</div>
+                <br />
+                <input type="submit" id="pika" name="Pikachu Plushy" value="Buy Now" />
+            </div>
+            <div class="items">
+                <img src="Squirtle.jpeg" class="itemsImage" />
+                <div class="description">Squirtle Plushy</div>
+                <div class="itemsPrice">$19.99</div>
+                <br />
+                <input type="submit" id="Squirtle" name="Squirtle Plushy" value="Buy Now" />
+            </div>
+            <div class="items">
+                <img src="Charmander.jpeg" class="itemsImage" />
+                <div class="description">Charmander Plushy</div>
+                <div class="itemsPrice">$19.99</div>
+                <br />
+                <input type="submit" id="Charmander" name="Charmander Plushy" value="Buy Now" />
+            </div>
+        </form>
     </div>
+
     <footer>
-        <p><br> Pokemon Fans<br> © Pokemon Fans Inc. 2021 All Rights Reserved</p> 
+        <p><br> Pokemon Fans<br> © Pokemon Fans Inc. 2021 All Rights Reserved</p>
     </footer>
 </body>
 

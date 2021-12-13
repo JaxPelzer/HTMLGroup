@@ -6,34 +6,104 @@
     <title>Pokemon Fans | Cart</title>
     <link href="htmlGroupLayout.css" rel="stylesheet" />
     <link href="cartLayout.css" rel="stylesheet" />
+    <script src="co_cart.js" defer></script>
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html"><img src="Logo Pokemon.png" alt="Pokemon Logo" width="320" height="213" />
+        <a href="index.html"><img src="Logo Pokemon.png" alt="Pokemon Logo" width="420" height="313" />
+            <nav>
+
                 <ul>
-                    <li><a href="home.html">Menu</a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="quiz.html">Whos that Pokemon?</a></li>
                     <li><a href="store.html">Store</a></li>
-                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
-        </nav>
+            </nav>
 
     </header>
 
 
-    <div id="container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
 
 
-    </div>
+    <section id="orderSection">
+        <form id="cart" name="cart" method="get" action="payment.html">
+
+            <table id="cartTable">
+                <caption>Shopping Cart</caption>
+                <tr>
+                    <td>
+
+                        <input type="hidden" name="modelCost" id="modelCost" value="19.99" />
+                        <input type="text" id="modelName" name="modelName" value="" readonly />
+                    </td>
+                    <td class="rightA">
+                        <label for="modelQty">Qty</label>
+                        <select name="modelQty" id="modelQty">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" name="orderCost" id="orderCost" size="10" value="" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="hidden" id="shippingType" name="shippingType" />
+                        <fieldset>
+                            <legend>Shipping</legend>
+                            <label><input type="radio" id="overnight" name="shipping" value="28.50" checked /> Overnight
+                                Shipping ($28.50 per)</label>
+                            <label><input type="radio" id="day_2" name="shipping" value="19.95" /> 2-Day
+                                Shipping ($19.95
+                                per)</label>
+                            <label><input type="radio" id="ground" name="shipping" value="12.95" />
+                                Ground Shipping ($12.95
+                                per)</label>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <input type="text" name="shippingCost" id="shippingCost" size="10" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="rightA">Subtotal</td>
+                    <td class="outcell">
+                        <input type="text" name="subTotal" id="subTotal" size="10" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="rightA">Tax (5%)</td>
+                    <td>
+                        <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="rightA">TOTAL</td>
+                    <td>
+                        <input type="text" name="cartTotal" id="cartTotal" size="10" readonly />
+                    </td>
+                </tr>
+            </table>
+
+            <input type="submit" id="buttonAdd" value="Checkout" />
+
+
+        </form>
+    </section>
 
     <footer>
         <p> <br>

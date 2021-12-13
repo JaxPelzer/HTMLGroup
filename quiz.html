@@ -1,200 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Pokemon Fans | Whos that Pokemon?</title>
-        <link href="htmlGroupLayout.css" rel="stylesheet" />
-        <!-- <link href="quiz.css" rel="stylesheet" type="text/css" /> -->
-        <link href="quizLayout.css" rel="stylesheet" />
-        <script type="text/javascript" src="functions.js" ></script>
-        <script>
+<head>
+    <meta charset="utf-8" />
+    <title>Pokemon Fans | Whos that Pokemon?</title>
+    <link href="htmlGroupLayout.css" rel="stylesheet" />
+    <!-- <link href="quiz.css" rel="stylesheet" type="text/css" /> -->
+    <link href="quizLayout.css" rel="stylesheet" />
+    <script type="text/javascript" src="functions.js"></script>
+    <script>
         var seconds = 0;
         var clockId;
         var correctAns;
-        
-        function runClock()
-        {
-        seconds++;
-        document.quiz.quizclock.value=seconds;
-        }
-        function startClock()
-        {
-        showQuiz();
-        clockId = setInterval(runClock, 1000);
-        }
-        function stopClock()
-        {
-        clearInterval(clockId);
-        correctAns = gradeQuiz();
-        alert("You have " + correctAns + " correct out of five in " + clockId + " seconds.");
-        }
-        </script>
-    </head>
 
-    <body>
-        <form name="quiz" action="">
-            <header>
+        function runClock() {
+            seconds++;
+            document.quiz.quizclock.value = seconds;
+        }
+        function startClock() {
+            showQuiz();
+            clockId = setInterval(runClock, 1000);
+        }
+        function stopClock() {
+            clearInterval(clockId);
+            correctAns = gradeQuiz();
+            alert("You have " + correctAns + " correct out of five in " + clockId + " seconds.");
+        }
+    </script>
+</head>
+
+<body>
+    <form name="quiz" action="">
+        <header>
+            <a href="index.html"><img src="Logo Pokemon.png" alt="Pokemon Logo" width="420" height="313" />
                 <nav>
-                    <a href="index.html"><img src="Logo Pokemon.png" alt="Pokemon Logo" width="420" height="313"/>
-                        <ul>
-                            <li><li><a href="home.html">Menu</a></li></li>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="quiz.html">Whos that Pokemon?</a></li>
-                            <li><a href="store.html">Store</a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                        </ul>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quiz.html">Whos that Pokemon?</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
                 </nav>
 
-            </header>
+        </header>
 
-            <section id="main">
-                <h1>Who's that Pokemon?</h1>
+        <section id="main">
+            <h1>Who's that Pokemon?</h1>
 
-                <p>All of our trivia quizzes are scored on the number of correct
-                    answers and the time required to submit those answers.
-                </p>
-                <p>To start the quiz, click the <b>Start Quiz</b> button below,
-                    which will reveal the first page of quiz questions and start
-                    the timer. When you have completed the questions, click
-                    the <b>Submit Answers</b> button on the quiz form.
-                    <p>&emsp;</p>
-                    <p>Select the name of the pokemons on the image.</p>
-                    <p>&emsp;</p>
-                </p>
-                <aside>
-                    <input name="quizclock" id="quizclock" value="0" />
-                    <input id="start" type="button" value="Start Quiz" onclick="startClock()" />
-                    <input id="stop" type="button" value="Submit Answers" onclick="stopClock()" />
-                </aside>
+            <p>All of our trivia quizzes are scored on the number of correct
+                answers and the time required to submit those answers.
+            </p>
+            <p>To start the quiz, click the <b>Start Quiz</b> button below,
+                which will reveal the first page of quiz questions and start
+                the timer. When you have completed the questions, click
+                the <b>Submit Answers</b> button on the quiz form.
+            <p>&emsp;</p>
+            <p>Select the name of the pokemons on the image.</p>
+            <p>&emsp;</p>
+            </p>
+            <aside>
+                <input name="quizclock" id="quizclock" value="0" />
+                <input id="start" type="button" value="Start Quiz" onclick="startClock()" />
+                <input id="stop" type="button" value="Submit Answers" onclick="stopClock()" />
+            </aside>
 
-                <table id="quiztable">
-                    <tr>
-                        <th rowspan="3">1.</th>
-                        <td colspan="2">
-                            <img src="whosPikachu.jpg" height="135" width="240">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="radio" name="q1" id="q1a" /> <label for="q1a"> a) Mimikyu</label>
-                        </td>
-                        <td id="cor1">
-                            <input type="radio" name="q1" id="q1c" /> <label for="q1c"> c) Pikachu</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="radio" name="q1" id="q1b" /> <label for="q1b"> b) Raichu</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="q1" id="q1d" /> <label for="q1d"> d) Pichu</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th rowspan="3">2.</th>
-                        <td colspan="2">
-                            <img src="whosSandshrew.jpg" height="135" width="240">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="radio" name="q2" id="q2a" /> <label for="q1"> <label for="q2a"> a)
+            <table id="quiztable">
+                <tr>
+                    <th rowspan="3">1.</th>
+                    <td colspan="2">
+                        <img src="whosPikachu.jpg" height="135" width="240">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q1" id="q1a" /> <label for="q1a"> a) Mimikyu</label>
+                    </td>
+                    <td id="cor1">
+                        <input type="radio" name="q1" id="q1c" /> <label for="q1c"> c) Pikachu</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q1" id="q1b" /> <label for="q1b"> b) Raichu</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q1" id="q1d" /> <label for="q1d"> d) Pichu</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="3">2.</th>
+                    <td colspan="2">
+                        <img src="whosSandshrew.jpg" height="135" width="240">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q2" id="q2a" /> <label for="q1"> <label for="q2a"> a)
                                 Sandslash</label>
-                            </td>
-                            <td>
-                                <input type="radio" name="q2" id="q2c" /> <label for="q1"> <label for="q2c"> c) Gible</label>
-                            </td>
-                        </tr>
-                        <tr>
-                        <td>
-                            <input type="radio" name="q2" id="q2b" /> <label for="q1"> <label for="q2b"> b) Komala</label>
-                        </td>
-                        <td id="cor2">
-                            <input type="radio" name="q2" id="q2d" /> <label for="q1"> <label for="q2d"> d)
+                    </td>
+                    <td>
+                        <input type="radio" name="q2" id="q2c" /> <label for="q1"> <label for="q2c"> c) Gible</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q2" id="q2b" /> <label for="q1"> <label for="q2b"> b) Komala</label>
+                    </td>
+                    <td id="cor2">
+                        <input type="radio" name="q2" id="q2d" /> <label for="q1"> <label for="q2d"> d)
                                 Sandshrew</label>
-                            </td>
-                    </tr>
-                    <tr>
-                        <th rowspan="3">3.</th>
-                        <td colspan="2">
-                            <img src="whosDiglett.jpg" height="135" width="240">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="cor3">
-                            <input type="radio" name="q3" id="q3a" /> <label for="q3a"> a) Diglett</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="q3" id="q3c" /> <label for="q3c"> c) Dugtrio</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="radio" name="q3" id="q3b" /> <label for="q3b"> b) Swepa</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="q3" id="q3d" /> <label for="q3d"> d) Silcoon</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th rowspan="3">4.</th>
-                        <td colspan="2">
-                            <img src="whosGengar.jpg" height="135" width="240">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="radio" name="q4" id="q4a" /> <label for="q4a"> a) Ghastly</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="q4" id="q4c" /> <label for="q4c"> c) Haunter</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="radio" name="q4" id="q4b" /> <label for="q4b"> b) Exploud</label>
-                        </td>
-                        <td id="cor4">
-                            <input type="radio" name="q4" id="q4d" /> <label for="q4d"> d) Gengar</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th rowspan="3">5.</th>
-                        <td colspan="2">
-                            <img src="whosPsyduck.jpg" height="135" width="240">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="radio" name="q5" id="q5a" /> <label for="q5a"> a) Slowbro</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="q5" id="q5c" /> <label for="q5c"> c) Golduck</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="cor5">
-                            <input type="radio" name="q5" id="q5b" /> <label for="q5b"> b) Psyduck</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="q5" id="q5d" /> <label for="q5d"> d) Slowking</label>
-                        </td>
-                    </tr>
-                </table>
-            </section>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="3">3.</th>
+                    <td colspan="2">
+                        <img src="whosDiglett.jpg" height="135" width="240">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="cor3">
+                        <input type="radio" name="q3" id="q3a" /> <label for="q3a"> a) Diglett</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q3" id="q3c" /> <label for="q3c"> c) Dugtrio</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q3" id="q3b" /> <label for="q3b"> b) Swepa</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q3" id="q3d" /> <label for="q3d"> d) Silcoon</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="3">4.</th>
+                    <td colspan="2">
+                        <img src="whosGengar.jpg" height="135" width="240">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q4" id="q4a" /> <label for="q4a"> a) Ghastly</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q4" id="q4c" /> <label for="q4c"> c) Haunter</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q4" id="q4b" /> <label for="q4b"> b) Exploud</label>
+                    </td>
+                    <td id="cor4">
+                        <input type="radio" name="q4" id="q4d" /> <label for="q4d"> d) Gengar</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="3">5.</th>
+                    <td colspan="2">
+                        <img src="whosPsyduck.jpg" height="135" width="240">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q5" id="q5a" /> <label for="q5a"> a) Slowbro</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q5" id="q5c" /> <label for="q5c"> c) Golduck</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="cor5">
+                        <input type="radio" name="q5" id="q5b" /> <label for="q5b"> b) Psyduck</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="q5" id="q5d" /> <label for="q5d"> d) Slowking</label>
+                    </td>
+                </tr>
+            </table>
+        </section>
 
 
 
-            <footer>
-                <p> <br>
-                    Pokemon Fans<br>
-                    © Pokemon Fans Inc. 2021 All Rights Reserved</p>
-                
-            </footer>
-        </form>
+        <footer>
+            <p> <br>
+                Pokemon Fans<br>
+                © Pokemon Fans Inc. 2021 All Rights Reserved</p>
+
+        </footer>
+    </form>
 
 
-    </body>
-    
+</body>
+
 </html>

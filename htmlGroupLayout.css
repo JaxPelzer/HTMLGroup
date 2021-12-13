@@ -16,6 +16,7 @@ html {
     background: url(imagepoke.jpeg);
     background-size: 100%;
 
+
 }
 
 body {
@@ -23,7 +24,7 @@ body {
     box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
     height: 100%;   
     margin: auto;
-    min-width: 340px;
+    min-width: 400px;
     max-width: 3840px;   
     width: 80%;
  }
@@ -45,7 +46,9 @@ nav {
 	width: 100%;
 }
 
-
+nav > ul {
+	display: table-row;
+}
 
 nav > ul > li {
 	display: table-cell;
@@ -72,6 +75,7 @@ footer{
     color: white;
     padding-bottom: 30px;
     padding-left: 30px;	
+    margin-top: 20px;
 }
 
 
@@ -87,13 +91,25 @@ footer p{
     margin-top: 20px;
     margin-bottom: 50px;
 }
-form {
-    position: relative;
-    background-color: white;
-    -moz-box-shadow: rgb(101, 101, 101) -20px 0px 20px,
-                rgb(101, 101, 101) 20px 0px 20px;
-    -webkit-box-shadow: rgb(101, 101, 101) -20px 0px 20px,
-                rgb(101, 101, 101) 20px 0px 20px;
-    box-shadow: rgb(101, 101, 101) -20px 0px 20px,
-                rgb(101, 101, 101) 20px 0px 20px;
- }
+
+
+ @media all  and (max-width: 480px){
+    nav > ul {
+        display: inline-block;
+    }
+    nav > ul > li {
+        display: block;
+
+    }
+}
+/* medium screens */
+@media all  and (min-width: 481px) and (max-width: 768px) {
+    nav > ul {
+        display: inline-block;
+    }
+    nav > ul > li {
+        display: block;
+
+    }
+    
+}

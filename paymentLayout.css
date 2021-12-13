@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+table#orderTable {
+    margin: 30px 0px 0px 45px;
+    width: 65%;
+
+    color: rgb(151, 151, 151);
+    padding-bottom: 20px;
+ }
+ 
+ 
+ form#order input {
+    background-color: transparent;
+    border: none;
+    color: rgb(151, 151, 151);
+ }
+ 
+ 
+ 
+ table#orderTable td {
+    height: 20px;
+    vertical-align: top;
+    
+ }
+ 
+ 
+ form#order input#modelQty {
+    width: 3em;
+ }
+ 
+ form#order input#modelName, form#order input#shippingType {
+    width: 15em;
+ }
+ 
+ form#order input {
+    color: rgb(151, 151, 151);
+ }
+ 
+ 
+ table#orderTable tr td:last-of-type input {
+    text-align: right;
+    border: none;
+ }
+ 
+ table#orderTable tr:nth-of-type(2) {
+   
+ }
+ 
+ table#orderTable tr:nth-of-type(2) td, table#orderTable tr:nth-of-type(4) td {
+    padding-top: 15px;
+ }
+ 
+ table#orderTable tr:nth-of-type(4) td {
+    
+ }
+ 
+ table#orderTable tr:last-of-type td {
+    padding-top: 15px;
+ }
+ 
+ table#orderTable td.rightA {
+    text-align: right;
+    padding-right: 10px;
+ }
+ 
+ 
+ 
+ /* Credit Form Styles */
+ 
+ section#paySection {
+
+    
+    min-height: 300px;
+    width: 90%;
+    margin: auto;
+ }
+ 
+ section#paySection form#credit fieldset#cards {
+    display: block;
+    clear: left;
+ }
+ 
+ section#paySection p#footnote {
+    font-size: 1em;
+    text-align: left;
+    margin: 0px 10px 20px 140px;
+ }
+ 
+ section#paySection h1 {
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+    margin: 20px 0px;
+    font-weight: normal;
+    color: rgb(57, 44, 28);
+ }
+ 
+ form#credit fieldset {
+    border: none;
+ }
+ 
+ 
+ form#credit fieldset#cards label:first-of-type {
+    text-align: right;
+    margin-left: 50px;
+ }
+ 
+ form#credit legend {
+    font-size: 1.3em;
+    padding: 8px;
+    width: 80%;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(57, 44, 28);
+ }
+ 
+ 
+ /* Input and Label Styles */
+ 
+ form#credit label {
+    display: block;
+    float: left;
+    clear: left;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    width: 180px;
+    text-align: right;
+    color: rgb(57, 44, 28);
+ }
+ 
+ 
+ form#credit input {
+    display: block;
+    float: left;
+
+ }
+ 
+ /* Radio Button Styles */
+ 
+ form#credit label.cardLabel {
+    display: inline-block;
+    float: none;
+    width: auto;
+ }
+ 
+ form#credit fieldset#cards img {
+    display: inline-block;
+    margin-left: 5px;
+
+ }
+ 
+ 
+ form#credit input[type='radio'] {
+    display: inline-block;
+    width: auto;
+    float: none;
+    clear: none;
+ }
+ 
+ form#credit fieldset#cards {
+    text-align: left;
+    margin-left: 50px;
+ }
+ 
+ form#credit input#cvc {
+    width: 3em;
+ }
+ 
+ form#credit input#expDate {
+    width: 5em;
+ }
+ 
+ form#credit input#subButton {
+    display: block;
+    width: 180px;
+    height: 35px;
+    margin: 15px 0px 10px 200px;
+    background-color: rgba(232, 218, 201, 0.8);
+    font-size: 1.3em;
+    border-radius: 20px;
+    float: none;
+ }
+ 
+ /* Valid and Invalid Styles */
+ 
+ input:invalid, input:focus:invalid {
+    outline: none;
+    background-color: rgba(221,147,148,0.2);
+  }
+ 
+ input:valid, input:focus:valid {
+    outline: none;
+    background-color: none;
+ }
