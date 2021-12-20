@@ -6,9 +6,7 @@
     <title>Pokemon Fans | Store</title>
     <link href="htmlGroupLayout.css" rel="stylesheet" />
     <link href="storeLayout.css" rel="stylesheet" />
-
-
-
+    <script src="co_cart.js" defer></script>
 </head>
 
 <body>
@@ -25,32 +23,80 @@
             </nav>
 
     </header>
-    <div id="container">
-        <form id="cart" name="cart" method="get" action="cart.html">
+    <div class="productTitle">
+        <h1>Pokemon Plushy</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <form class="cart" name="cart" method="get" action="cart.html">
             <div class="items">
-                <img src="Pika.jpg" class="itemsImage" />
+                <img src="Product-2.jpeg" class="itemsImage" />
                 <div class="description">Pikachu Plushy</div>
                 <div class="itemsPrice">$19.99</div>
-                <br />
-                <input type="submit" id="pika" name="Pikachu Plushy" value="Buy Now" />
+                <br/>
+                <input type="submit" class="button" name="Pikachu Plushy" value="Buy Now"/>
+
             </div>
             <div class="items">
-                <img src="Squirtle.jpeg" class="itemsImage" />
-                <div class="description">Squirtle Plushy</div>
+                <img src="Product-1.jpeg" class="itemsImage" />
+                <div class="description">Eevee Plushy</div>
                 <div class="itemsPrice">$19.99</div>
                 <br />
-                <input type="submit" id="Squirtle" name="Squirtle Plushy" value="Buy Now" />
+                <input type="submit" class="button" name="Eevee Plushy" value="Buy Now" />
             </div>
             <div class="items">
-                <img src="Charmander.jpeg" class="itemsImage" />
+                <img src="Product-3.jpeg" class="itemsImage" />
+                <div class="description">Bulbasaur Plushy</div>
+                <div class="itemsPrice">$19.99</div>
+                <br />
+                <input type="submit" class="button" name="Bulbasaur Plushy" value="Buy Now" />
+            </div>
+            <div class="items">
+                <img src="Product-4.jpeg" class="itemsImage" />
                 <div class="description">Charmander Plushy</div>
                 <div class="itemsPrice">$19.99</div>
                 <br />
-                <input type="submit" id="Charmander" name="Charmander Plushy" value="Buy Now" />
+                <input type="submit" class="button" name="Charmander Plushy" value="Buy Now" />
             </div>
         </form>
     </div>
-
+    <br>
+    <div class="productTitle">
+        <h1 id="bottom">Pokemon Merch</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <form class="cart" name="cart" method="get" action="cart.html">
+            <div class="items">
+                <img src="Merch-1.jpeg" class="itemsImage" />
+                <div class="description">Charmander Shirt</div>
+                <div class="itemsPrice">$24.99</div>
+                <br>
+                <input type="submit" class="button" name="Charmander Shirt" value="Buy Now" />
+            </div>
+            <div class="items">
+                <img src="Merch-2.jpeg" class="itemsImage" />
+                <div class="description">Pokemon SweatPants</div>
+                <div class="itemsPrice">$27.49</div>
+                <br/>
+                <input type="submit" class="button" name="Bulbasaur Plushy" value="Buy Now" />
+            </div>
+            <div class="items">
+                <img src="Merch-3.jpeg" class="itemsImage" />
+                <div class="description">Blue Pikachu Beanie</div>
+                <div class="itemsPrice">$12.49</div>
+                <br />
+                <input type="submit" class="button" name="Charmander Plushy" value="Buy Now" />
+            </div>
+            <div class="items">
+                <img src="Merch-4.jpeg" class="itemsImage" />
+                <div class="description">Umbreon Black Hoodie</div>
+                <div class="itemsPrice">$29.99</div>
+                <br />
+                <input type="submit" class="button" name="Charmander Plushy" value="Buy Now" />
+            </div>
+        </form>
+    </div>
     <footer>
         <p><br> Pokemon Fans<br> © Pokemon Fans Inc. 2021 All Rights Reserved</p>
     </footer>
