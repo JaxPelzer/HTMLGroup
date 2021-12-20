@@ -9,6 +9,7 @@ window.addEventListener("load", function () {
    var orderFields = Data.split(/[&=}]/g);
 
    document.forms.cart.elements.modelName.value = orderFields[0];
+   document.forms.cart.elements.modelCost.value = orderFields[1];
 
    calcCart();
    var cart = document.forms.cart;

@@ -61,8 +61,7 @@ div > input:hover {
         padding: 3px;
     }
     .items {
-        position: absolute;
-        top: 420px;
+        
         right: 50%;
         font-size: 2em;
         color: black;
@@ -80,8 +79,6 @@ div > input:hover {
     }
     .items{
         text-align: center;
-        position: absolute;
-        top: 420px;
         right: 50%;
         color: black;
         background-color: white;
